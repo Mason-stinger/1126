@@ -462,8 +462,8 @@ EVENTS: Dict[int, Dict[str, Union[Alert, Callable[[Any, messaging.SubMaster, boo
   
   EventName.turningIndicatorOn: {
     ET.WARNING: Alert(
+      "핸들을 잡아주세요",
       "방향지시등 동작중에는 핸들을 잡아주세요",
-      "",
       AlertStatus.userPrompt, AlertSize.small,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, .0, .0, .2),
   },
